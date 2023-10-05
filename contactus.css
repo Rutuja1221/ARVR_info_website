@@ -1,0 +1,94 @@
+/* Import the main CSS file to inherit global styles */
+@import url("arvrstyle.css");
+
+/* Additional styles for the contact page */
+#contact {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; /* Set background color for header and body to white */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    color: #333; /* Text color for headings */
+    margin-bottom: 15px;
+}
+
+#contact p {
+    font-size: 16px;
+    color: #666; /* Text color for paragraphs */
+    margin-bottom: 20px;
+}
+
+#contact label {
+    display: block;
+    font-weight: bold;
+    color: #333; /* Text color for labels */
+    margin-bottom: 5px;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#contact textarea {
+    resize: vertical;
+}
+
+#contact input[type="submit"] {
+    background-color: #d5dbe3; /* Button background color */
+    color: #2e1010; /* Button text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contact input[type="submit"]:hover {
+    background-color: #d5dbe3; /* Slightly darker blue on hover */
+}
+
+/* Background animation for the area after margin */
+#contact::after {
+    content: "";
+    display: block;
+    animation: changeBackgroundColor 10s infinite alternate;
+    background-size: cover;
+    background-color: transparent; /* Set background color to transparent */
+}
+
+/* Rest of your CSS styles above... */
+
+/* Style for the return home button */
+.return-home-button {
+  position: absolute;
+  top: 10px; /* Adjust the top position as needed */
+  right: 220px; /* Adjust the right position as needed */
+}
+
+.return-home-button a {
+  text-decoration: none;
+  background-color: #d5dbe3; /* Button background color */
+  color: #2e1010; /* Button text color */
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.return-home-button a:hover {
+  background-color: #d5dbe3; /* Slightly darker blue on hover */
+}
